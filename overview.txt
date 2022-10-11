@@ -1,0 +1,34 @@
+GEOMETRY OBJECTS
+
+- Point has a single set of coordinates, like when we mapped a single marker to the map.
+
+"geometry":{
+    "type":"Point",
+    "coordinates": [-118.4, 33.9]
+    }
+
+- MultiPoint is an array of point coordinates, like when we mapped multiple cities with their population to a map.
+
+"geometry":{
+  "type":"MultiPoint",
+  "coordinates": [-118.4, 33.9], [-118.5, 34.0]
+  }
+
+
+- LineString has an array of Point coordinates, like when we mapped the airline route from LAX to SFO.
+
+"geometry":{
+  "type":"LineString",
+  "coordinates": [[-118.4, 33.9],[-122.4, 37.6]]
+  }
+
+- MultiLineString are an array of LineString coordinates, like when we mapped the LAX-SFO-SLC-SEA airline route.
+
+"geometry":{
+  "type":"MultiLineString",
+  "coordinates":
+     [[-118.4, 33.9],[-106.4, 31.8]],
+     [[-118.4, 33.9],[-123.2, 44.1]]
+  }
+
+- 
